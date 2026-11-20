@@ -5,7 +5,7 @@ description: Direct and produce a short film made entirely in code, in one of th
 
 # Lemo-Opuscar
 
-The styles, guides and tools live in the Lemo-Opuscar library (github.com/lemomo-ai/lemo-opuscar). This skill fetches it and hands you over to it.
+The styles, guides and tools live in the Lemo-Opuscar library (github.com/hafasm28/video-toolbox, a fork of github.com/lemomo-ai/lemo-opuscar). This skill fetches it and hands you over to it.
 
 1. **Get the library.** Run `sh "<skill base directory>/scripts/setup.sh"`. It clones or updates the library (default `~/lemo-opuscar`; a clone the user is standing in is used as it is), lists any missing system tools (Node, ffmpeg, Python) and prints `LIB=<path>` on its last line.
 2. **Install the core tools early.** Start `sh "<skill base directory>/scripts/setup.sh" deps` right away, in the background if you can: it takes a few minutes the first time. Add `deps voice` or `deps music` later, only if the film needs them (`$LIB/TECHNIQUE.md` §1). Report missing system tools (Node, ffmpeg, Python) in your one round of questions; don't install system software yourself. A style marked ✦ also needs an image generator the user provides (`$LIB/AGENTS.md`, Workflow, Brief). Packages a style needs (its `STYLE.md` lists them) you install yourself, into the project folder.
